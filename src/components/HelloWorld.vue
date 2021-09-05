@@ -23,9 +23,9 @@
       </div>
     </div>
     <div class="list-test">
-      <div class="list-item"></div>
-      <div class="list-item"></div>
-      <div class="list-item"></div>
+      <div class="list-item">1</div>
+      <div class="list-item">2</div>
+      <div class="list-item">3</div>
     </div>
   </div>
 </template>
@@ -39,19 +39,22 @@ export default {
 }
 </script>
 
-<style lang="scss">
-$green: #034403;
+<style lang="scss" scoped>
+$gray: #eee;
+$bgcolor: lightblue;
 .list-test {
   width:200px;
   height: 200px;
-  background: #fff;
+  background: $gray;
   display: flex;
   flex-direction: column;
-  padding: 10px;
-  .item-test{
-    width:100%;
-    height:30px;
-    background: $green;
+  color: white;
+  .list-item{
+    padding: 5px;
+    max-width: 100%;
+    height: 30px;
+    background: $bgcolor;
+    margin-bottom:5px
   }
 }
 </style>
